@@ -1,19 +1,199 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>rdesktop: A Remote Desktop Protocol Client</title>
 
-    <link type="stylesheet"
-	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	  rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+	  rel="stylesheet"/>
+    <link href="css/rdesktop.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <center>
-      <h1>This is the new home of rdesktop project.</h1>
-      <h2>The page is currently under construction.</h2>
-    </center>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    
+    <!--
+	Navigation bar
+      -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+	    rdesktop
+	  </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/rdesktop/rdesktop/releases">Releases</a></li>
+            <li><a href="https://github.com/rdesktop/rdesktop/issues">Issues</a></li>
+	    <li><a href="https://github.com/rdesktop/rdesktop">Repository</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!--
+	Page content container
+      -->
+    <div class="container">
+
+      <!-- Well :) -->
+      <div class="well">
+	<p>
+	  rdesktop is an open source UNIX client for connecting to
+	  Windows Remote Desktop Services, capably of natively speaking
+	  Remote Desktop Protocol (RDP) in order to present the user's
+	  Windows desktop. rdesktop is known to work with Windows server
+	  version ranging from NT 4 terminal server to Windows 2012 R2.
+	  </p>
+      </div>
+
+      <!-- Overview -->
+      <div class="section">
+	<h3 class="section">Overview</h3>
+	<p>rdesktop currently runs on most UNIX based platforms with
+	  the X Window System, and other ports should be fairly
+	  straightforward.
+	</p>
+
+	<p>rdesktop is released under the GNU Public License (GPL),
+	  version 3. Please send feedback, bug reports and patches to
+	  the appropriate mailing list. Patches could also be
+	  submitted as a pull request
+	  on <a href="https://github.com/rdesktop/rdesktop/pulls">github</a>.
+	</p>
+
+	<p>rdesktop project is hosted on github. See the <a href="https://github.com/rdesktop">github
+	    rdesktop organization</a> for more information.
+	</p>
+	  
+	
+      </div>
+
+      <!-- Download -->
+      <div class="section">
+	<h3 class="section">Download</h3>
+
+	<p>The <a href="https://github.com/rdesktop/rdesktop/releases/latest">latest
+	    stable</a> version of rdesktop is currently v.1.8.3.  This
+	    release adds support for Windows 2012 and Windows 2012 R2
+	    which fixes smart card redirection, mouse cursor and other
+	    minor issues. There has been work on code cleanup to match
+	    specification and a few other bug fixes.
+	</p>
+
+	<p>Previous versions of rdesktop releases and corresponding
+	  change logs are available at the <a href="https://github.com/rdesktop/rdesktop/releases">release
+	  page</a> of rdesktop project on github.
+	</p>
+
+	<p>You can also download a <a href="https://github.com/rdesktop/rdesktop/archive/master.zip">snapshot</a> of current
+	development version which may be intermittently unstable while
+	new features are developed.
+      </div>
+
+      <!-- Documentation -->
+      <div class="section">
+	<h3 class="section">Documentation</h3>
+	<p>The rdesktop file release contains documentation on the
+	  program.
+	</p>
+
+	<p>The RDP protocol itself is essentially an extension of the
+	  ITU-T T.128 (aka T.SHARE) application sharing
+	  protocol. Microsoft has recently made RDP specifications
+	  openly available via the <a href="http://msdn.microsoft.com/library/">MSDN library</a>.
+	</p>
+      </div>
+
+      <!-- Community -->
+      <div class="section">
+	<h3 class="section">Community</h3>
+	<p>This project has the following three mailing lists hosted
+	  by <a href="https://groups.google.com">google groups</a>:
+	</p>
+	<table class="table">
+	    <tr>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-announce">Announcements</a></td>
+	      <td>Moderated announcement list for new releases and
+		other important news.
+	      </td>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-announce/join">Subscribe</a></td>
+	    </tr>
+
+	    <tr>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-users">Users</a></td>
+	      <td>Support and general discussion list for users of
+		rdesktop. Please use this list for bug reports.
+	      </td>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-users/join">Subscribe</a></td>
+	    </tr>
+
+	    <tr>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-devel">Development</a></td>
+	      <td>Discussion list for rdesktop developers. This list
+		can be used for patch submissions and other development
+		ideas.
+	      </td>
+	      <td><a href="https://groups.google.com/forum/#!forum/rdesktop-devel/join">Subscribe</a></td>
+	    </tr>
+	</table>
+
+      </div>
+
+      <!-- SeamlessRDP -->
+      <div class="section">
+	<h3 class="section">SeamlessRDP</h3>
+	<p>A SeamlessRDP server extension is available to support
+	  integration of individual applications with the client
+	  desktop.</p>
+
+	<p>SeamlessRDP is released under the GNU Public License (GPL),
+	  version 3. Please send feedback, bug reports and patches to
+	  the appropriate mailing list. Patches could also be
+	  submitted as a pull request
+	  on <a href="https://github.com/rdesktop/seamlessrdp/pulls">github</a>.
+	</p>
+
+	<p>
+	  Precompiled binaries are available
+	from <a href="http://www.cendio.com/seamlessrdp/">Cendio</a>.</p>
+      </div>
+
+      <!-- Professional Services-->
+      <div class="section">
+	<h3 class="section">Professional Services</h3>
+	<p>Professional services, such as custom development, is
+	  offered by the following companies:
+	</p>
+	<ul>
+	  <li><a href="http://www.cendio.com/">Cendio AB</a> (Sweden)	    
+ 	  <li><a href="http://www.cranberrynet.com/">Cranberry</a> (UK)
+	  <li><a href="http://www.rlnx.com/rdesktop">Revolution Linux</a> (Canada)
+	  <li><a href="http://www.disklessworkstations.com/">DisklessWorkstations.com</a> (USA)
+	  <li><a href="http://www.morphodo.com/">Morphodo.com</a> (Germany)	    
+	</ul>
+
+	<p>If you want to be included in this list, please contact us
+	  on the developers mailing list.  Please note that your web
+	  site must mention "rdesktop" and link to <a href="http://www.rdesktop.org">www.rdesktop.org</a>.
+	</p>
+
+      </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 
 </html>
